@@ -1,4 +1,4 @@
-# Program Name
+# cTAKES-SciSpaCy-symptom-extractor 
 
 **Description**: This program is designed to extract and analyze symptoms from clinical text documents using two different tools: cTAKES and SciSpaCy. The program includes scripts for data loading, processing, extraction, and validation. It currently supports three different websites' datasets: MayoClinic, ODEMSA, and Wikipedia.
 
