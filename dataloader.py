@@ -9,11 +9,9 @@ class DataLoader():
     def return_json_object(self, input_file_path):
         try:
             with open(input_file_path, "r") as file:
-                text = file.read()
+                return json.load(file)
         except Exception as e:
             print(f"Error: {e}")
-        json_object = json.loads(text)
-        return json_object
     
     def json_to_text_in_dir(self, input_file_path, output_file_directory):
         """
@@ -37,7 +35,7 @@ class DataLoader():
     def json_to_text(self, input_file_path, output_file_directory):
         json_object = self.return_json_object(input_file_path)
         for (disease, description) in json_object.items():
-            output_file_path = output_file_directory + (disease).replace("/", "")
+            output_file_path = os.path.join(output_file_directory, (disease).replace("/", ""))
             with open(output_file_path, "a") as f:
                 description = description.replace("\n", "").replace('"', "").strip()
                 f.write(re.sub(r'[^\x00-\x7F"]', '', description))
@@ -67,10 +65,10 @@ class DataLoader():
         with open(output_file, "w") as f:
             json.dump(output_json_dictionary, f)
 
-if __name__ == "__main__":    
+if __name__ == "__main__":
     data = DataLoader()
-
-    for directory in os.scandir("KB_results/cTAKES/Raw"):
-        data.ctakes_to_json(directory.path, "/Users/as314159265/Code/repos/cTAKES-SciSpaCy-symptom-extractor/KB_results/cTAKES/Processed/" + directory.path.split("/")[-1] + "/disease_symptoms.json")
+    def directory_iterator(input_directory_path, output_directory_path):
+        for directory in os.scandir(input_directory_path):
+            data.ctakes_to_json(directory.path, os.path.join(output_directory_path, directory.path.split("/")[-1], "disease_symptoms.json"))
 
 

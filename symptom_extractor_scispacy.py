@@ -7,6 +7,7 @@ import scispacy
 import spacy
 import json
 import re
+import os
 
 class SciSpacyExtractor():
     def __init__(self, model_name):
@@ -28,8 +29,10 @@ class SciSpacyExtractor():
         with open(file_to_write, "w") as file:
             json.dump(list_of_disease_symptoms, file)
 
-
-data = DataLoader()
-scispacy_extractor = SciSpacyExtractor("en_ner_bc5cdr_md")
-scispacy_extractor.return_symptoms_as_json(data.return_json_object(""), 
-                                           file_to_write="")
+if __name__ == "__main__":
+    data = DataLoader()
+    scispacy_extractor = SciSpacyExtractor("en_ner_bc5cdr_md")
+    for directory in os.listdir("KG_evaluation"):
+        os.mkdir(f"KG_results/SciSpacy/{directory.split('/')[-1]}")
+        scispacy_extractor.return_symptoms_as_json(data.return_json_object(os.path.join("KG_Evaluation", directory, "disease_content.json")), 
+                                                   file_to_write=f"KG_results/SpiSpacy/{directory.split('/')[-1]}/disease_symptoms.json")
