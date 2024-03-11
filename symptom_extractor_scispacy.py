@@ -1,3 +1,7 @@
+"""
+SciSpaCy symptom extractor.
+"""
+
 from dataloader import DataLoader
 import scispacy
 import spacy
