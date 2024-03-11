@@ -25,6 +25,7 @@ class SciSpacyExtractor():
             json.dump(list_of_disease_symptoms, file)
 
 
-data = DataLoader("/Users/asatpathy/Documents/Code/cTAKES-SciSpacy-symptom-extractor/KB_evaluation/Wikipedia/disease_content.json")
+data = DataLoader()
 scispacy_extractor = SciSpacyExtractor("en_ner_bc5cdr_md")
-scispacy_extractor.return_symptoms_as_json(data.json_object, "KB_results/test.json")
+scispacy_extractor.return_symptoms_as_json(data.return_json_object("/Users/as314159265/Code/repos/cTAKES-SciSpaCy-symptom-extractor/KB_evaluation/ODEMSA/disease_content.json"), 
+                                           file_to_write="/Users/as314159265/Code/repos/cTAKES-SciSpaCy-symptom-extractor/KB_results/SciSpaCy/ODEMSA/disease_symptoms.json")
