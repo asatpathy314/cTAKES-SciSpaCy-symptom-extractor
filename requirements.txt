@@ -1,0 +1,50 @@
+annotated-types==0.6.0
+blis==0.7.11
+catalogue==2.0.10
+certifi==2024.2.2
+charset-normalizer==3.3.2
+click==8.1.7
+cloudpathlib==0.16.0
+confection==0.1.4
+conllu==4.5.3
+cymem==2.0.8
+en_ner_bc5cdr_md @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_ner_bc5cdr_md-0.5.4.tar.gz#sha256=ffc73130a710edf851206199720cb2c744a043e032f5da6ba4bb36863deca778
+idna==3.6
+Jinja2==3.1.3
+joblib==1.3.2
+langcodes==3.3.0
+MarkupSafe==2.1.5
+murmurhash==1.0.10
+ninja==1.11.1.1
+nmslib @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ac7n3vvx73/croot/nmslib_1685618818396/work/python_bindings
+numpy @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_a51i_mbs7m/croot/numpy_and_numpy_base_1708638620867/work/dist/numpy-1.26.4-cp39-cp39-macosx_11_0_arm64.whl#sha256=829e20a6c33ce51c1a93497d06cb4af22d84caa54a431ea062765da3134e5287
+packaging==24.0
+pandas==2.2.1
+preshed==3.0.9
+psutil @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1310b568-21f4-4cb0-b0e3-2f3d31e39728k9coaga5/croots/recipe/psutil_1656431280844/work
+pybind11 @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_e8uf5j9ob1/croot/pybind11-split_1682965537168/work
+pybind11-global @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_e8uf5j9ob1/croot/pybind11-split_1682965537168/work
+pydantic==2.6.3
+pydantic_core==2.16.3
+pysbd==0.3.4
+python-dateutil==2.9.0.post0
+pytz==2024.1
+requests==2.31.0
+scikit-learn==1.4.1.post1
+scipy==1.10.1
+scispacy==0.5.4
+six==1.16.0
+smart-open==6.4.0
+spacy==3.7.4
+spacy-legacy==3.0.12
+spacy-loggers==1.0.5
+srsly==2.4.8
+thinc==8.2.3
+threadpoolctl==3.3.0
+tqdm==4.66.2
+typer==0.9.0
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+wasabi==1.1.2
+weasel==0.3.4

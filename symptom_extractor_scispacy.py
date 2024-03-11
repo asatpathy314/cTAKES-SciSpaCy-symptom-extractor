@@ -31,5 +31,5 @@ class SciSpacyExtractor():
 
 data = DataLoader()
 scispacy_extractor = SciSpacyExtractor("en_ner_bc5cdr_md")
-scispacy_extractor.return_symptoms_as_json(data.return_json_object("/Users/as314159265/Code/repos/cTAKES-SciSpaCy-symptom-extractor/KB_evaluation/ODEMSA/disease_content.json"), 
-                                           file_to_write="/Users/as314159265/Code/repos/cTAKES-SciSpaCy-symptom-extractor/KB_results/SciSpaCy/ODEMSA/disease_symptoms.json")
+scispacy_extractor.return_symptoms_as_json(data.return_json_object(""), 
+                                           file_to_write="")
