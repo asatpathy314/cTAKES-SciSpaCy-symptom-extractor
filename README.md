@@ -19,7 +19,7 @@ A shell script to run the cTAKES clinical pipeline on a specified input director
 ### 2. dataloader.py
 A Python script containing a `DataLoader` class with methods for converting various data formats, such as JSON and XMI. It also includes functionality for organizing data into specific directories.
 
-### 3. symptom_extract_cTAKES.py
+### 3. symptom_extractor_cTAKES.py
 A Python script attempting to use the cTAKES pipeline for symptom extraction. Currently disabled due to an issue with the shell command.
 
 ### 4. symptom_extractor_scispacy.py
