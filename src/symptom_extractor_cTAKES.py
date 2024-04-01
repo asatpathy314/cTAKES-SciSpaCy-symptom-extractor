@@ -1,3 +1,4 @@
+#/Users/as314159265/Code/repos/link-lab/cTAKES-SciSpaCy-symptom-extractor/.conda/bin/python
 """
 Uses a variety of command line tools to perform batch processing of 
 clinical text documents for the purpose of symptom extraction. 
@@ -23,5 +24,8 @@ class cTAKESExtractor:
         self.dataloader.json_to_text(input_file_path=self.input_file_path, output_file_directory="cTAKES_intermediate")
 
 if __name__ == "__main__":
-    ctakes = cTAKESExtractor(input_file_path=sys.argv[1])     
-    ctakes.generate_intermediate()
+    try:
+        ctakes = cTAKESExtractor(input_file_path=sys.argv[1])     
+        ctakes.generate_intermediate()
+    except:
+        print("Usage: symptom_extractor_cTAKES.py input_file_name")

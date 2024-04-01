@@ -6,7 +6,6 @@ Validation Scripts
 from dataloader import DataLoader
 import json
 import os
-import pandas as pd
 
 class Validator:
     def __init__(self, gold_label_json, test_json, tool): #tool is a temporary stopgap for bugs with cTAKES

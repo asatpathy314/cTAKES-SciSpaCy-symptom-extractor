@@ -43,6 +43,9 @@ cTAKES_intermediate/
 KB_results/
 KG_evaluation/
 KG_results/
+KB_Treatment/
+KB_Treatment_Results/
+Data/
 
 # Python #
 ##########
